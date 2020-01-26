@@ -1,11 +1,14 @@
-#Evaluate mathematical expression
-###Instructions
+# Evaluate mathematical expression
+### Instructions
+
 Given a mathematical expression as a string you must return the result as a number.
 
-###Numbers
+### Numbers
+
 Number may be both whole numbers and/or decimal numbers. The same goes for the returned result.
 
-##Operators
+### Operators
+
 You need to support the following mathematical operators:
 
 * Multiplication *
@@ -15,17 +18,21 @@ You need to support the following mathematical operators:
 
 Operators are always evaluated from left-to-right, and * and / must be evaluated before + and -.
 
-###Parentheses
+### Parentheses
+
 You need to support multiple levels of nested parentheses, ex. (2 / (2 + 3.33) * 4) - -6
 
-###Whitespace
+### Whitespace
+
 There may or may not be whitespace between numbers and operators.
 
 >An addition to this rule is that the minus sign (-) used for negating numbers and parentheses will never be separated by whitespace. 
 
-##My approach
+## My approach
+
 **I cut the task to smaller and smaller pieces recursively until just the result left.**
-####Solution steps in nutshell
+#### Solution steps in nutshell
+
 1. Organize and trim the expression string to a list.
 2. Search parenthesis
 3. Search the strongest scope --> () > *,/ > +,-
